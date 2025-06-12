@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 @st.cache_data
 def load_data():
     # Adjust file path as needed; in Streamlit Cloud include the file in your repo and use a relative path
-    df = pd.read_excel('data.xlsx')
+    df = pd.read_excel('dashboard/data.xlsx')
     # Clean and standardize column names
     df.columns = df.columns.str.strip()
 
