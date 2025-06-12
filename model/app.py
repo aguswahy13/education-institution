@@ -5,8 +5,8 @@ import numpy as np
 st.set_page_config(page_title="Student Dropout Prediction", layout="centered")
 
 # --- Load Model ---
-model = joblib.load(r"C:\python-project\dicoding\institusi-pendidikan\model\rdf_model.joblib")
-scaler = joblib.load(r"C:\python-project\dicoding\institusi-pendidikan\model\scaler.pkl")
+model = joblib.load(r"model/rdf_model.joblib")
+scaler = joblib.load(r"model/scaler.pkl")
 
 def predict_status(inputs):
     input_array = np.array(inputs).reshape(1, -1)
